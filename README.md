@@ -5,8 +5,8 @@ The dataset chosen for this project is sourced from this link: https://www.kaggl
 
 Method1: This method uses images from the sourced website to predict the genre of the music. The method compares the performance of different architectures, training procedures and diffferent optimizers in performing classification. 
   - Three different model architectures were used.
-      **- A feed forward Neural Network**
-      **- A Convolution Neural Network**
+      - **A feed forward Neural Network**
+      - **A Convolution Neural Network**
       - A Convolution Neural Network with Batch Normalisation
   -  Two different optimisers were use.
       - Adam optimiser
