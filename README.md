@@ -17,3 +17,4 @@ Method1: This method uses images from the sourced website to predict the genre o
    
 Method2: This method uses audio files from the sourced website to predict the genre of the music. An **LSTM model architecture** was tested on two different audio set. One original clips, divided into 3 sec clips. Another dataset formed by implementing a **GAN**. The accuracy of LSTM model was test on the two dataset.
 
+The datset used to train all the models is made publically available at the following link: https://drive.google.com/drive/folders/1Fq5LwbKNseS488vZ1P4NN-Wq8qJ4gGi7?usp=sharing
