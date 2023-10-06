@@ -50,3 +50,4 @@ Accuracy achieved on the validation dataset formed from the dataset:
 The report of this project can be found on the following link:
 https://drive.google.com/file/d/11vmE0u58IIIVIq__QkDbb_oKJxXXR3U7/view?usp=sharing
 
+Update version of a different method with GAN-LSTM implementation can be found in this [repository](https://github.com/achyutk/Music-Genre-Prediction--v2)
