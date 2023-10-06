@@ -1,9 +1,11 @@
-# Music Genre Prediction
+# Music Genre Prediciton
+![img](https://github.com/achyutk/Music-Genre-Prediction/assets/73283117/24ad3028-2d2f-4b9c-bfd7-5063980a9528)
 
-The following repository consists of code to implement and test 2 methods of predicting music genre.
-The dataset chosen for this project is sourced from this link: https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
 
-Method1: This method uses images from the sourced website to predict the genre of the music. The method compares the performance of different architectures, training procedures and diffferent optimizers in performing classification. 
+The following repository consists of code to predicting music genre using images of MEL Spectograms. The dataset chosen for this project is sourced from this link: https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
+
+This method uses images from the sourced website to predict the genre of the music. The method compares the performance of different architectures, training procedures and diffferent optimizers in performing classification.
+
   - Three different model architectures were used.
       - **A feed forward Neural Network**
       - **A Convolution Neural Network**
@@ -14,7 +16,37 @@ Method1: This method uses images from the sourced website to predict the genre o
   - 2 Different setting of training were use:
       - 50 epochs (No stopping criteria)
       - 100 epoch  (No stopping criteria)
-   
-Method2: This method uses audio files from the sourced website to predict the genre of the music. An **LSTM model architecture** was tested on two different audio set. One original clips, divided into 3 sec clips. Another dataset formed by implementing a **GAN**. The accuracy of LSTM model was test on the two dataset.
 
-The datset used to train all the models is made publically available at the following link: https://drive.google.com/drive/folders/1Fq5LwbKNseS488vZ1P4NN-Wq8qJ4gGi7?usp=sharing
+
+
+# Installations
+
+Clone repo and install the following libraries:
+
+> pip install torch torchvision torchaudio <br>
+> pip install sklearn
+
+
+Download the [images_original Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification) and paste in the *data* folder of this repository
+
+train.py file will execute and save the best model achieved which is the third CNN optimised using AdamOptimiser. <br>
+demo.ipynb  demonstrates exectution of all the models that were tested.
+
+# Results
+
+Accuracy achieved on the validation dataset formed from the dataset:
+
+| Model  | AdamOptimiser_Val accuracy    | RMSOptimiser_Val accuracy|
+ :---: | :---: | :---: |
+| FNN:50 epochs | 46.46%   | 8.08%   |
+| FNN:100 epochs | 43.43%   | 8.08%   |
+| CNN-1: 50 epochs| 8.08%   | 8.08%   |
+| CNN-1: 50 epochs| 8.08%   | 8.08%   |
+| CNN-2: 50 epochs| 68.68%   | 16.16%   |
+| CNN-2: 50 epochs| 66.66%   | 53.53%   |
+
+# Further Reading
+
+The report of this project can be found on the following link:
+https://drive.google.com/file/d/11vmE0u58IIIVIq__QkDbb_oKJxXXR3U7/view?usp=sharing
+
